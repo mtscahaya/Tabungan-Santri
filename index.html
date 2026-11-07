@@ -15,14 +15,16 @@
     import { getFirestore, collection, addTimestamp, getDocs, addDoc, deleteDoc, doc, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
     // --- KONFIGURASI FIREBASE ANDA (Ganti dengan data dari Firebase Console) ---
-    const firebaseConfig = {
-      apiKey: "API_KEY_ANDA_DISINI",
-      authDomain: "PROJECT_ID.firebaseapp.com",
-      projectId: "PROJECT_ID",
-      storageBucket: "PROJECT_ID.appspot.com",
-      messagingSenderId: "SENDER_ID",
-      appId: "APP_ID"
-    };
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCp74mWVHF_NxZW0aTPWgSFq-La_TV0oCc",
+  authDomain: "tabungan-santri-9f68f.firebaseapp.com",
+  projectId: "tabungan-santri-9f68f",
+  storageBucket: "tabungan-santri-9f68f.firebasestorage.app",
+  messagingSenderId: "722386954248",
+  appId: "1:722386954248:web:140b0c32b4e51846cec9bd",
+  measurementId: "G-D44JMLLEC0"
+};
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
